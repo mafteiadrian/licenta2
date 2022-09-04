@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_compass_aspp_domain_Constatare" items="${constatares}" z="XW7wYkNCdBxV7pW4jyBp3m5uAeE=">
+        <table:table data="${constatares}" id="l_com_compass_aspp_domain_Constatare" path="/constatares" z="qcvV+/Mz61p9vXopY7dAQLtUv1E=">
+            <table:column id="c_com_compass_aspp_domain_Constatare_descriere" property="descriere" z="kUozLhcn0xbKR2xgpmO+fIv1z90="/>
+        </table:table>
+    </page:list>
+</div>

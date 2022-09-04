@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_compass_aspp_domain_Client" items="${clients}" z="UY441HKyBEfgHrRW+3HbWLxoWeY=">
+        <table:table data="${clients}" id="l_com_compass_aspp_domain_Client" path="/clients" z="VtPZGnNr/D51m8S1/b0tXp8u2kc=">
+            <table:column id="c_com_compass_aspp_domain_Client_nume" property="nume" z="V79Dlg9UBCKEEMDdH6/uJlrcYUA="/>
+            <table:column id="c_com_compass_aspp_domain_Client_telefon" property="telefon" z="Sqh1WTPswfZZbxKSsSOOKGQZoWM="/>
+            <table:column id="c_com_compass_aspp_domain_Client_adresa" property="adresa" z="Q5bCzBVQfNPjDjjHlOEgI/J14Dk="/>
+            <table:column id="c_com_compass_aspp_domain_Client_email" property="email" z="93xmCD3ESP8xHm4ZeK5lPta1Tmw="/>
+        </table:table>
+    </page:list>
+</div>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_compass_aspp_domain_Job" object="${job}" path="/jobs" z="56sVOq3RRP2AAc8CWwFzajoTF3U=">
+        <field:display field="client" id="s_com_compass_aspp_domain_Job_client" object="${job}" z="F7R1c/LScvH2BKYDVKf9QMfN1N8="/>
+        <field:display date="true" dateTimePattern="${job_dataprimirii_date_format}" field="dataPrimirii" id="s_com_compass_aspp_domain_Job_dataPrimirii" object="${job}" z="ScCaYmeed9jrK3NSUZcrYvxz0gw="/>
+        <field:display date="true" dateTimePattern="${job_datafinalizarii_date_format}" field="dataFinalizarii" id="s_com_compass_aspp_domain_Job_dataFinalizarii" object="${job}" z="HIWhTCgUSEs0bn95/geYZ54wYwg="/>
+        <field:display field="lungime" id="s_com_compass_aspp_domain_Job_dimensiuni_lungime" object="${job.dimensiuni}" z="h7PJ68FAgi855IWf0um+H0LLDFk=1"/>
+        <field:display field="latime" id="s_com_compass_aspp_domain_Job_dimensiuni_latime" object="${job.dimensiuni}" z="h7PJ68FAgi855IWf0um+H0LLDFk=2"/>
+        <field:display field="material" id="s_com_compass_aspp_domain_Job_material" object="${job}" z="Fj3v4LWykuGBQxeA5E/6Xh35Zhg="/>
+        <field:display field="responsabil" id="s_com_compass_aspp_domain_Job_responsabil" object="${job}" z="nN9ZGHO6OyNyaDGD2qBgvgzvKas="/>
+        <field:display field="echipament" id="s_com_compass_aspp_domain_Job_echipament" object="${job}" z="Rzuqoe0oDArekAa4iq0vw+CRXEc="/>
+        <field:display field="statusJob" id="s_com_compass_aspp_domain_Job_statusJob" object="${job}" z="v7fr+0ilb2Qouwy3jafqZUPzA8A="/>
+        <field:display field="tipFinisare" id="s_com_compass_aspp_domain_Job_tipFinisare" object="${job}" z="Phb0s7g5ruHN8Fzj9dYQ5sOXqqE="/>
+    </page:show>
+</div>

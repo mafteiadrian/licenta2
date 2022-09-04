@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_compass_aspp_domain_Angajat" items="${angajats}" z="UjX165kjteHEpoqiDyafebbEDZw=">
+        <table:table data="${angajats}" id="l_com_compass_aspp_domain_Angajat" path="/angajats" z="6/Qy9slGN0cpCUbBrwwgzwqEM0U=">
+            <table:column id="c_com_compass_aspp_domain_Angajat_nume" property="nume" z="Ot+xIb2j+a1Z093r4W3FLH+YIj4="/>
+            <table:column id="c_com_compass_aspp_domain_Angajat_prenume" property="prenume" z="xY9VFLBTkndW93gAo8CLRdE2ywU="/>
+            <table:column id="c_com_compass_aspp_domain_Angajat_adresa" property="adresa" z="UtQs9RnbsYy/M1l53ARB87aPKe8="/>
+            <table:column id="c_com_compass_aspp_domain_Angajat_telefon" property="telefon" z="v7DE8BiwMthaQCgLFEkdSz/08/E="/>
+        </table:table>
+    </page:list>
+</div>

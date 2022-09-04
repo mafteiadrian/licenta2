@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_compass_aspp_domain_EchipamentProductie" items="${echipamentproducties}" z="i4AWDe+rFpg9YW6iKxMLOw3jJwE=">
+        <table:table data="${echipamentproducties}" id="l_com_compass_aspp_domain_EchipamentProductie" path="/echipamentproducties" z="jTMR9Qht4W2Te5/n7Qmrv0wm8dA=">
+            <table:column id="c_com_compass_aspp_domain_EchipamentProductie_nume" property="nume" z="gu0wN9WjS6KzIofyyb68pSi/Ems="/>
+            <table:column id="c_com_compass_aspp_domain_EchipamentProductie_operatiune" property="operatiune" z="gTiCL1JqASG2gi5qXy8aU1pZPJI="/>
+            <table:column id="c_com_compass_aspp_domain_EchipamentProductie_status" property="status" z="pDodRK2oLUruk/w0xjc+BDx1jbk="/>
+            <table:column id="c_com_compass_aspp_domain_EchipamentProductie_material" property="material" z="4vmPiEx+NGn+HPxuyWCfPRP4Mxk="/>
+        </table:table>
+    </page:list>
+</div>

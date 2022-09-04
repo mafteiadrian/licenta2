@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_compass_aspp_domain_Utilizator" items="${utilizators}" z="X+h0evYMRJHzdxdCWcUMa/d7+S4=">
+        <table:table data="${utilizators}" id="l_com_compass_aspp_domain_Utilizator" path="/utilizators" z="KTucJNTftioUKq4bejRat9TvZM0=">
+            <table:column id="c_com_compass_aspp_domain_Utilizator_numeUtilizator" property="numeUtilizator" z="BKO84Orof6msIsQdd9+UlX/bYPk="/>
+<!--            <table:column id="c_com_compass_aspp_domain_Utilizator_parola" property="parola" z="hNwYj88aB4yeajD4zn7yf3jvolQ="/>-->
+            <table:column id="c_com_compass_aspp_domain_Utilizator_rol" property="rol" z="lxKn+iAjvkISwKtO1rA6euMPKSQ="/>
+            <table:column id="c_com_compass_aspp_domain_Utilizator_angajat" property="angajat" z="UzBX4xE4wGRuYJi6SxZAXexL0+s="/>
+        </table:table>
+    </page:list>
+</div>

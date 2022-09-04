@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_compass_aspp_domain_Angajat" object="${angajat}" path="/angajats" z="UysxsFcimYEqbnwlsSM3kFPBQOw=">
+        <field:display field="nume" id="s_com_compass_aspp_domain_Angajat_nume" object="${angajat}" z="bcgysNMQM4AYhzMk/vKGR4oYU1Y="/>
+        <field:display field="prenume" id="s_com_compass_aspp_domain_Angajat_prenume" object="${angajat}" z="qHwqjfD/Kzc1Y13yM7c0Dzu/5CU="/>
+        <field:display field="adresa" id="s_com_compass_aspp_domain_Angajat_adresa" object="${angajat}" z="ltYyPONOWNGELYrsHhrvToEfFBM="/>
+        <field:display field="telefon" id="s_com_compass_aspp_domain_Angajat_telefon" object="${angajat}" z="FRWmIcs7XOyAAfGC+Hh5Vp/RJds="/>
+    </page:show>
+</div>

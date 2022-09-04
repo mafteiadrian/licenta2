@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_compass_aspp_domain_Interventie" object="${interventie}" path="/interventies" z="pR9upMBL+MSRSdqqd2Z9an5VC6Q=">
+        <field:display field="client" id="s_com_compass_aspp_domain_Interventie_client" object="${interventie}" z="W9GSSLS/X/c7YYSr8OaWQgHNcYE="/>
+        <field:display date="true" dateTimePattern="${interventie_datainceput_date_format}" field="dataInceput" id="s_com_compass_aspp_domain_Interventie_dataInceput" object="${interventie}" z="vLyp0wT6JrfKg35XhHumggzj2Rk="/>
+        <field:display date="true" dateTimePattern="${interventie_datasfarsit_date_format}" field="dataSfarsit" id="s_com_compass_aspp_domain_Interventie_dataSfarsit" object="${interventie}" z="VbAQJclXd6iVz77ho1wJJzO+qgs="/>
+        <field:display field="angajat" id="s_com_compass_aspp_domain_Interventie_angajat" object="${interventie}" z="MsAkVKAbmjtBMHWE/MwZ7/zXGhE="/>
+        <field:display field="constatare" id="s_com_compass_aspp_domain_Interventie_constatare" object="${interventie}" z="WthFePmU6p13n657NM4itUrtAg4="/>
+        <field:display field="echipament" id="s_com_compass_aspp_domain_Interventie_echipament" object="${interventie}" z="o5+d3FEOqX3ZuQsq5Xd6QugROZ4="/>
+        <field:display field="descriereDefect" id="s_com_compass_aspp_domain_Interventie_descriereDefect" object="${interventie}" z="vTr4bZxaATe0daXxR6aZU3cX8oc="/>
+    </page:show>
+</div>

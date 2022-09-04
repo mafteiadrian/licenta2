@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_com_compass_aspp_domain_Utilizator" modelAttribute="utilizator" path="/utilizators" versionField="Version" z="Zs+PJFb6LOtW7QhBY3PVP62W1mE=">
+        <field:input field="numeUtilizator" id="c_com_compass_aspp_domain_Utilizator_numeUtilizator" min="2" required="true" z="NxVjp9ZHSDxLl9pr9BcFT2aZY5w="/>
+        <field:input field="parola" id="c_com_compass_aspp_domain_Utilizator_parola" min="2" required="true" z="4NRuH7xh10x73wk/V2DeCmyj3+w="/>
+        <field:select field="rol" id="c_com_compass_aspp_domain_Utilizator_rol" itemValue="id" items="${rols}" multiple="true" path="/rols" z="i1PNbJOs9ZP9F966e8ixjEiwweE="/>
+        <field:select field="angajat" id="c_com_compass_aspp_domain_Utilizator_angajat" itemValue="id" items="${angajats}" path="/angajats" z="KK7RSFpF1yxF34YyJ/qfvdHYJG8="/>
+    </form:update>
+</div>

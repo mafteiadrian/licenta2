@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_compass_aspp_domain_EchipamentService" items="${echipamentservices}" z="R16A4S9wW/rcAp0EWh/W5/kTb68=">
+        <table:table data="${echipamentservices}" id="l_com_compass_aspp_domain_EchipamentService" path="/echipamentservices" z="sKr67otQ1kgGkE03tp+hp1oYDIo=">
+            <table:column id="c_com_compass_aspp_domain_EchipamentService_nume" property="nume" z="mioBstoSZtRZPY2f+rwq2XVL48Q="/>
+            <table:column id="c_com_compass_aspp_domain_EchipamentService_serie" property="serie" z="3AvnCBuQNm91Jr9dNePOS5YcrNk="/>
+            <table:column id="c_com_compass_aspp_domain_EchipamentService_tip" property="tip" z="IZIzks+/V1FvVPfa22Gv1J9+gwI="/>
+        </table:table>
+    </page:list>
+</div>

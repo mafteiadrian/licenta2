@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_compass_aspp_domain_Rol" items="${rols}" z="dBTsY5B4nKVSwfu4uUsMqWmsgj4=">
+        <table:table data="${rols}" id="l_com_compass_aspp_domain_Rol" path="/rols" z="4OlpGHXQkKOr2K1X7ZeF5RPN1CQ=">
+            <table:column id="c_com_compass_aspp_domain_Rol_numeRol" property="numeRol" z="MQqJAegB8Pm+oIXPSyiBj4sE8jw="/>
+        </table:table>
+    </page:list>
+</div>

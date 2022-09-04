@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_compass_aspp_domain_Job" items="${jobs}" z="ISD223L+lsRfXFsTcX4PZoTB/wI=">
+        <table:table data="${jobs}" id="l_com_compass_aspp_domain_Job" path="/jobs" z="lMf76BeldM8rtlHDmlnsAqW8fEQ=">
+            <table:column id="c_com_compass_aspp_domain_Job_client" property="client.nume" z="BAHEL99GHCuuypKa3za6FG4RjrI="/>
+            <table:column date="true" dateTimePattern="${job_dataprimirii_date_format}" id="c_com_compass_aspp_domain_Job_dataPrimirii" property="dataPrimirii" z="WMLkS2fkfSrLVPjbjmZT8fFxUOU="/>
+            <table:column date="true" dateTimePattern="${job_datafinalizarii_date_format}" id="c_com_compass_aspp_domain_Job_dataFinalizarii" property="dataFinalizarii" z="dcpNdAEqSU+/2cTVOQMBQ30gtyM="/>
+            <table:column id="c_com_compass_aspp_domain_Job_dimensiuni_lungime" property="dimensiuni.lungime"  z="NF6xydyLwB58wdkSBeFOYs1MkBo=1"/>
+            <table:column id="c_com_compass_aspp_domain_Job_dimensiuni_latime" property="dimensiuni.latime"  z="NF6xydyLwB58wdkSBeFOYs1MkBo=2"/>
+            <table:column id="c_com_compass_aspp_domain_Job_material" property="material.nume" z="s4qVbhs75qJPCrZTP7rqyrkZloA="/>
+            <table:column id="c_com_compass_aspp_domain_Job_responsabil" property="responsabil.nume" z="+4ngOptPtICV93XuWDSzuA+/5vU="/>
+        </table:table>
+    </page:list>
+</div>

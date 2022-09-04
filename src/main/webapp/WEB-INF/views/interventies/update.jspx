@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_com_compass_aspp_domain_Interventie" modelAttribute="interventie" path="/interventies" versionField="Version" z="tHucQcixM294Hj5z5Pxs3TSrxgI=">
+        <field:select field="client" id="c_com_compass_aspp_domain_Interventie_client" itemValue="id" items="${clients}" path="/clients" required="true" z="926lmrXNsgoflaD3uYvnuU3EYMU="/>
+        <field:datetime dateTimePattern="${interventie_datainceput_date_format}" field="dataInceput" id="c_com_compass_aspp_domain_Interventie_dataInceput" required="true" z="SUTHqKanNZPZ52I6mIGdDgC6BdY="/>
+        <field:datetime dateTimePattern="${interventie_datasfarsit_date_format}" field="dataSfarsit" id="c_com_compass_aspp_domain_Interventie_dataSfarsit" z="qOFn70h97dRk/rb5b9z8iiJIyAY="/>
+        <field:select field="angajat" id="c_com_compass_aspp_domain_Interventie_angajat" itemValue="id" items="${angajats}" path="/angajats" required="true" z="E2AZzCB8uXeYx5A5VF1BLmLKunY="/>
+        <field:select field="constatare" id="c_com_compass_aspp_domain_Interventie_constatare" itemValue="id" items="${constatares}" path="/constatares" required="true" z="qMfI7GeshIz2DEt4tro1Q2T895o="/>
+        <field:select field="echipament" id="c_com_compass_aspp_domain_Interventie_echipament" itemValue="id" items="${echipamentservices}" path="/echipamentservices" required="true" z="BYx48JTtSNm8UYWoi6EW4S0+v7s="/>
+        <field:textarea field="descriereDefect" id="c_com_compass_aspp_domain_Interventie_descriereDefect" required="true" z="AU1ISv5gsqjYO8QYcZZ2K5nLo9g="/>
+    </form:update>
+</div>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_compass_aspp_domain_Material" items="${materials}" z="0G0yB6XGu8suhDNNTjz02EMafoQ=">
+        <table:table data="${materials}" id="l_com_compass_aspp_domain_Material" path="/materials" z="NA4m1CAXrVd8S6LBmdnoqQ4GOz8=">
+            <table:column id="c_com_compass_aspp_domain_Material_nume" property="nume" z="kfZFvK3eJtDM04TaXWJCpYw/gEw="/>
+            <table:column id="c_com_compass_aspp_domain_Material_cantitateMp" property="cantitateMp" z="EDGOn/GvCbBkhRfOhroqaTde8eM="/>
+        </table:table>
+    </page:list>
+</div>

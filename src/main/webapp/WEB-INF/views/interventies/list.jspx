@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_compass_aspp_domain_Interventie" items="${interventies}" z="9Bo5IevoQ93bP2p8efOq1qetsqs=">
+        <table:table data="${interventies}" id="l_com_compass_aspp_domain_Interventie" path="/interventies" z="Prv8ZzIVoi9lwwCd75JxAFm9yNY=">
+            <table:column id="c_com_compass_aspp_domain_Interventie_client" property="client" z="Gl1ekcI3EjVKlq/JAZGnSTRKpsU="/>
+            <table:column date="true" dateTimePattern="${interventie_datainceput_date_format}" id="c_com_compass_aspp_domain_Interventie_dataInceput" property="dataInceput" z="6eFVoKp9fmb3xT9mKGvgR+asEcw="/>
+            <table:column date="true" dateTimePattern="${interventie_datasfarsit_date_format}" id="c_com_compass_aspp_domain_Interventie_dataSfarsit" property="dataSfarsit" z="xWMNKzSQS0ceA7nENEqMGz24J/M="/>
+            <table:column id="c_com_compass_aspp_domain_Interventie_angajat" property="angajat" z="JXWlq/82s4c0fuAqs2GTJmaSH7I="/>
+            <table:column id="c_com_compass_aspp_domain_Interventie_constatare" property="constatare" z="JQBU/ofTVAt1CvtE5WbpQ6gOWaA="/>
+            <table:column id="c_com_compass_aspp_domain_Interventie_echipament" property="echipament" z="YJ5qLFfweH7H5FYCURQ4Av6/8MM="/>
+        </table:table>
+    </page:list>
+</div>

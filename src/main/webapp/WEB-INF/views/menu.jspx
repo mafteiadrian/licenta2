@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:menu="urn:jsptagdir:/WEB-INF/tags/menu" id="menu" xmlns:sec="http://www.springframework.org/security/tags" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <menu:menu id="_menu" z="nZaf43BjUg1iM0v70HJVEsXDopc=">
+        <sec:authorize ifAllGranted="ROLE_service">
+        <menu:category id="c_interventie" z="LAjZG/OIV+EY5XJtF2vu2xt7sA0=">
+            <menu:item id="i_interventie_new" messageCode="global_menu_new" url="/interventies?form" z="rrdg08jvdBfdzTvuxZwo5kM73gw="/>
+            <menu:item id="i_interventie_list" messageCode="global_menu_list" url="/interventies?page=1&amp;size=${empty param.size ? 10 : param.size}" z="k9n4hI9NQ1zqAvfL73cUVWjkK3w="/>
+        </menu:category>
+            <menu:category id="c_constatare" z="PxBmeQaD0JU9orywGH8jiTOiCiY=">
+            <menu:item id="i_constatare_new" messageCode="global_menu_new" url="/constatares?form" z="xDbBMivQmmZ+N/9MXofAwKK3SMc="/>
+            <menu:item id="i_constatare_list" messageCode="global_menu_list" url="/constatares?page=1&amp;size=${empty param.size ? 10 : param.size}" z="ui1UWR3GMwbpIJpIXZ0rVepzmhc="/>
+        </menu:category>
+        <menu:category id="c_echipamentservice" z="ZbyXldbnwHN87aFIuo8zcZbpkGU=">
+            <menu:item id="i_echipamentservice_new" messageCode="global_menu_new" url="/echipamentservices?form" z="yhKpmuSQNwNpw/dz8F4RjhistDQ="/>
+            <menu:item id="i_echipamentservice_list" messageCode="global_menu_list" url="/echipamentservices?page=1&amp;size=${empty param.size ? 10 : param.size}" z="ywarlPrkF7zIqUbn0m0ODVIZZPA="/>
+        </menu:category>
+        
+        </sec:authorize>
+        <sec:authorize ifAllGranted="ROLE_admin">
+        <menu:category id="c_angajat" z="Ni4nOXcgs3szsV4fd3xucXTGTTU=">
+            <menu:item id="i_angajat_new" messageCode="global_menu_new" url="/angajats?form" z="wPACMwlAcPWCxNWuEzgOxrg+aGU="/>
+            <menu:item id="i_angajat_list" messageCode="global_menu_list" url="/angajats?page=1&amp;size=${empty param.size ? 10 : param.size}" z="+APzYkhiWWe1ZBK26mJKOqB2Oyw="/>
+        </menu:category>
+        <menu:category id="c_rol" z="WyJ0DN0p4cfPsGF7WGHEFk6Ok1k=">
+            <menu:item id="i_rol_new" messageCode="global_menu_new" url="/rols?form" z="pci13zJkyKMJXhGhbCY9f9yBMb4="/>
+            <menu:item id="i_rol_list" messageCode="global_menu_list" url="/rols?page=1&amp;size=${empty param.size ? 10 : param.size}" z="GQHH+mdvcxfHlFAlkR2gFwHsv1s="/>
+        </menu:category>
+        <menu:category id="c_utilizator" z="lK6D1aJcKvrnnofUdd+Y1aEHdlI=">
+            <menu:item id="i_utilizator_new" messageCode="global_menu_new" url="/utilizators?form" z="hMNsDE+4MiSVYMj0Vb/JzNWy/K8="/>
+            <menu:item id="i_utilizator_list" messageCode="global_menu_list" url="/utilizators?page=1&amp;size=${empty param.size ? 10 : param.size}" z="btFpOzt5KyJL2/rOlcTIZLiY2hA="/>
+        </menu:category>
+        </sec:authorize> 
+        <sec:authorize ifAllGranted="ROLE_manager">
+        <menu:category id="c_echipamentproductie" z="jtBXPlycYAwlnTZbAxF2+vVD1kc=">
+            <menu:item id="i_echipamentproductie_new" messageCode="global_menu_new" url="/echipamentproducties?form" z="+XRnl5o2enlgtMRxFX+ZN2vRKUk="/>
+            <menu:item id="i_echipamentproductie_list" messageCode="global_menu_list" url="/echipamentproducties?page=1&amp;size=${empty param.size ? 10 : param.size}" z="KDR4x4ue3cN0uS/6/T6k7E19JQ0="/>
+        </menu:category>
+        <menu:category id="c_material" z="Kp7KvIKqW9pT1YLn2mt4Ih6GRLc=">
+            <menu:item id="i_material_new" messageCode="global_menu_new" url="/materials?form" z="zTZlzGDquPtudXVWP981BzrwlwU="/>
+            <menu:item id="i_material_list" messageCode="global_menu_list" url="/materials?page=1&amp;size=${empty param.size ? 10 : param.size}" z="Oenn+pAWa/OCx+LlZOe/twPiQcA="/>
+        </menu:category>
+        </sec:authorize>
+        <sec:authorize ifAnyGranted="ROLE_sales,ROLE_service">
+            <menu:category id="c_client" z="TjeLu8x0oS98tSiRzdPNDOc8U+c=">
+            <menu:item id="i_client_new" messageCode="global_menu_new" url="/clients?form" z="0rEWYB2Yq6qokJif3zv05zcXpXk="/>
+            <menu:item id="i_client_list" messageCode="global_menu_list" url="/clients?page=1&amp;size=${empty param.size ? 10 : param.size}" z="/DxsyzfFyvp93UEW0WcXvtjs4zo="/>
+        </menu:category>
+        </sec:authorize>
+        <sec:authorize ifAnyGranted="ROLE_sales, ROLE_admin">
+        <menu:category id="c_job" z="Spq9e4Ex4B3IMcYI5WfoQsLFC30=">
+            <menu:item id="i_job_new" messageCode="global_menu_new" url="/jobs?form" z="LPLNOdNVR7SU3S6Mm86Cya2uODg="/>
+            <menu:item id="i_job_list" messageCode="global_menu_list" url="/jobs?page=1&amp;size=${empty param.size ? 10 : param.size}" z="40TPkqDKrJpvrpVeIfIWHa+/lZU="/>
+        </menu:category>
+        </sec:authorize>
+    </menu:menu>
+</div>
