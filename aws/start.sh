@@ -14,4 +14,4 @@ echo "Database host: $RDS_PASSWORD"
 echo "Database host: $TMP_DIR"
 
 
-java -jar licenta-0.0.2-SNAPSHOT.jar --spring.datasource.url=jdbc:mysql://$RDS_HOSTNAME:$RDS_PORT/aspp --spring.datasource.username=$RDS_USERNAME --spring.datasource.password=$RDS_PASSWORD -Djava.io.tmpdir=$TMP_DIR
+java -jar licenta-0.0.2-SNAPSHOT.war --spring.datasource.url=jdbc:mysql://$RDS_HOSTNAME:$RDS_PORT/aspp --spring.datasource.username=$RDS_USERNAME --spring.datasource.password=$RDS_PASSWORD -Djava.io.tmpdir=$TMP_DIR
