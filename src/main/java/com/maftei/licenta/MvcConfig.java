@@ -46,13 +46,16 @@ public class MvcConfig {
 
     @Bean
     public ResourceBundleThemeSource themeSource() {
-        return new ResourceBundleThemeSource();
+        ResourceBundleThemeSource resourceBundleThemeSource = new ResourceBundleThemeSource();
+        resourceBundleThemeSource.setFallbackToSystemLocale(false);
+        return resourceBundleThemeSource;
     }
 
     @Bean
     public CookieThemeResolver themeResolver() {
         CookieThemeResolver cookieLocaleResolver = new CookieThemeResolver();
         cookieLocaleResolver.setCookieName("theme");
+        cookieLocaleResolver.setDefaultThemeName("standard");
         return cookieLocaleResolver;
     }
 }
