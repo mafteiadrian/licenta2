@@ -1,5 +1,5 @@
 package com.maftei.licenta.domain;
 
 public enum StatusComanda {
-    Noua, PartialTerminata, Finisat;
+    Noua, PartialTerminata, Finalizat;
 }
