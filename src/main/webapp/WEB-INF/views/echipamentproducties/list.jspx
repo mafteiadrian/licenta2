@@ -4,6 +4,7 @@
     <jsp:output omit-xml-declaration="yes"/>
     <page:list id="pl_com_compass_aspp_domain_EchipamentProductie" items="${echipamentproducties}" z="i4AWDe+rFpg9YW6iKxMLOw3jJwE=">
         <table:table data="${echipamentproducties}" id="l_com_compass_aspp_domain_EchipamentProductie" path="/echipamentproducties" z="jTMR9Qht4W2Te5/n7Qmrv0wm8dA=">
+            <table:column id="c_com_compass_aspp_domain_EchipamentProductie_id" property="id" z="gu0wN9WjS6KzIofyyb68pSi/Ems="/>
             <table:column id="c_com_compass_aspp_domain_EchipamentProductie_nume" property="nume" z="gu0wN9WjS6KzIofyyb68pSi/Ems="/>
             <table:column id="c_com_compass_aspp_domain_EchipamentProductie_operatiune" property="operatiune" z="gTiCL1JqASG2gi5qXy8aU1pZPJI="/>
             <table:column id="c_com_compass_aspp_domain_EchipamentProductie_status" property="status" z="pDodRK2oLUruk/w0xjc+BDx1jbk="/>

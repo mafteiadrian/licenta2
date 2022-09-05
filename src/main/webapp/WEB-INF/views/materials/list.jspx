@@ -4,6 +4,7 @@
     <jsp:output omit-xml-declaration="yes"/>
     <page:list id="pl_com_compass_aspp_domain_Material" items="${materials}" z="0G0yB6XGu8suhDNNTjz02EMafoQ=">
         <table:table data="${materials}" id="l_com_compass_aspp_domain_Material" path="/materials" z="NA4m1CAXrVd8S6LBmdnoqQ4GOz8=">
+            <table:column id="c_com_compass_aspp_domain_Material_id" property="id" z="kfZFvK3eJtDM04TaXWJCpYw/gEw="/>
             <table:column id="c_com_compass_aspp_domain_Material_nume" property="nume" z="kfZFvK3eJtDM04TaXWJCpYw/gEw="/>
             <table:column id="c_com_compass_aspp_domain_Material_cantitateMp" property="cantitateMp" z="EDGOn/GvCbBkhRfOhroqaTde8eM="/>
         </table:table>
